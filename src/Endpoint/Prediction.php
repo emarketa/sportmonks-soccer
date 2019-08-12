@@ -49,7 +49,7 @@ class Prediction extends SoccerClient
      */
     public function getValueBets()
     {
-        $url = "valuebets/next";
+        $url = "predictions/valuebets/next";
         return $this->call($url);
     }
 
@@ -60,7 +60,7 @@ class Prediction extends SoccerClient
      */
     public function getValueBetsByFixtureId(int $fixtureId)
     {
-        $url = "valuebets/fixture/{$fixtureId}";
+        $url = "predictions/valuebets/fixture/{$fixtureId}";
         return $this->call($url);
     }
 }
